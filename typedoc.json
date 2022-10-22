@@ -1,0 +1,9 @@
+{
+  "entryPoints": ["src/index.ts"],
+  "out": "docs",
+  "githubPages": false,
+  // for plugin markdown
+  "readme": "none",
+  "entryDocument": "modules.md",
+  "indexTitle": "Type Definitions"
+}

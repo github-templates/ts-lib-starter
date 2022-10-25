@@ -19,10 +19,14 @@
     "build-fast": "tsup src/index.ts --format cjs,esm",
     "build": "pnpm run build-fast --dts-resolve",
     "build:docs": "typedoc",
+    "website": "pnpm run --filter @docs/website dev",
     "test": "vitest run",
     "lint": "eslint src -f mo",
     "prepublishOnly": "pnpm run lint && pnpm run test && pnpm run build && pnpm run build:docs",
-    "prepare": "husky install"
+    "prepare": "simple-git-hooks"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm run lint && pnpm test"
   },
   "license": "MIT",
   "devDependencies": {
@@ -31,7 +35,7 @@
     "eslint": "^8.26.0",
     "eslint-config-mo": "^0.5.3",
     "eslint-formatter-mo": "^1.2.0",
-    "husky": "^8.0.1",
+    "simple-git-hooks": "^2.8.1",
     "tsup": "6.0.1",
     "typedoc": "^0.23.17",
     "typedoc-plugin-markdown": "^3.13.6",

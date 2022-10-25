@@ -1,0 +1,27 @@
+{
+  "name": "@docs/website",
+  "version": "0.0.0",
+  "description": "Documentation of tslib",
+  "private": true,
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "serve": "vitepress serve docs"
+  },
+  "keywords": [],
+  "author": {
+    "name": "fengzilong",
+    "url": "https://github.com/fengzilong"
+  },
+  "dependencies": {
+    "vitepress": "latest",
+    "vue": "latest"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@algolia/client-search"
+      ]
+    }
+  }
+}

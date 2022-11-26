@@ -1,6 +1,6 @@
 {
   "name": "tslib",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "My awesome typescript library",
   "publishConfig": {
     "access": "public"
@@ -16,7 +16,7 @@
   },
   "types": "./dist/index.d.ts",
   "scripts": {
-    "build-fast": "tsup src/index.ts --format cjs,esm",
+    "build-fast": "tsup",
     "build": "pnpm run build-fast --dts-resolve",
     "build:docs": "typedoc",
     "website": "pnpm run --filter @docs/website dev",

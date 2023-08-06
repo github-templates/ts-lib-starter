@@ -11,7 +11,10 @@ module.exports = {
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
   ],
   rules: {
-    'no-magic-numbers': 'off'
+    'no-magic-numbers': 'off',
+    // https://github.com/typescript-eslint/typescript-eslint/pull/2609
+    'no-duplicate-imports': 'off',
+    '@typescript-eslint/no-duplicate-imports': [ 'error' ],
   },
   overrides: [],
   parser: '@typescript-eslint/parser',

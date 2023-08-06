@@ -15,5 +15,13 @@
     "types": [
       "vitest/importMeta"
     ]
-  }
+  },
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    },
+    {
+      "path": "./tsconfig.test.json"
+    }
+  ]
 }

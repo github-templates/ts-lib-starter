@@ -6,10 +6,18 @@
     "moduleResolution": "Node",
     "allowSyntheticDefaultImports": true,
     "types": [
-      "vitest/importMeta"
+      "vitest/importMeta",
+      "vitest/globals",
+      "./vitest"
     ],
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
   },
   "include": [
-    "test"
+    "test",
+    "vitest.setup.ts"
   ]
 }

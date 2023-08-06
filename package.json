@@ -31,16 +31,32 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^12",
+    "@testing-library/react-hooks": "^8.0.1",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/node": "^16",
+    "@types/react": "^17",
+    "@types/react-dom": "^17",
+    "@types/testing-library__jest-dom": "^5.14.9",
     "@typescript-eslint/eslint-plugin": "^5.40.1",
     "@typescript-eslint/parser": "^5.40.1",
     "eslint": "^8.26.0",
     "eslint-config-mo": "^0.5.3",
     "eslint-formatter-mo": "^1.2.0",
+    "react": "^17",
+    "react-dom": "^17",
+    "react-test-renderer": "^17",
     "simple-git-hooks": "^2.8.1",
     "tsup": "6.0.1",
     "typedoc": "^0.23.17",
     "typedoc-plugin-markdown": "^3.13.6",
     "typescript": "^4.8.0",
-    "vitest": "^0.33.0"
+    "vitest": "^0.33.0",
+    "vitest-tsconfig-paths": "^3.4.1"
+  },
+  "peerDependencies": {
+    "react": "^17",
+    "react-dom": "^17"
   }
 }
